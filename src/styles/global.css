@@ -3,18 +3,17 @@
 @import "@fontsource-variable/inter";
 
 @theme {
-  --color-primary: #00c0e1;
-  --color-secondary: #ffffff;
-  --color-accent: #ff148c;
-  --color-background: #111111;
-  --color-foreground: #333333;
+  --color-primary: #29c7b5;
+  --color-secondary: #4D7CFE;
+  --color-tertiary: #A26CFA;
+  --color-accent: #FF8A5B;
+  --color-background: #F4F6FA;
+  --color-foreground: #0D132B;
+  --color-muted: #80869F;
 
   /* Tipografía y Textos */
   --font-poppins: "Poppins", sans-serif;
   --font-inter: "Inter Variable", sans-serif;
-
-  --color-text: #f0f0f0;
-  --color-text-muted: #a3a3a3;
 
   /* Estados de Feedback */
   --color-error: #ef4444;
