@@ -1,0 +1,77 @@
+---
+const brandColors = [
+  { name: 'Primary', hex: '#00c0e1', class: 'bg-primary' },
+  { name: 'Secondary', hex: '#ffffff', class: 'bg-secondary' },
+  { name: 'Accent', hex: '#ff148c', class: 'bg-accent' },
+];
+
+const baseColors = [
+  { name: 'Background', hex: '#111111', class: 'bg-background' },
+  { name: 'Foreground', hex: '#333333', class: 'bg-foreground' },
+  { name: 'Text', hex: '#f0f0f0', class: 'bg-text' },
+  { name: 'Text Muted', hex: '#a3a3a3', class: 'bg-text-muted' },
+];
+
+const feedbackColors = [
+  { name: 'Success', hex: '#10b981', class: 'bg-success' },
+  { name: 'Error', hex: '#ef4444', class: 'bg-error' },
+  { name: 'Warning', hex: '#f59e0b', class: 'bg-warning' },
+  { name: 'Info', hex: '#00c0e1', class: 'bg-info' },
+];
+---
+
+<section class="flex flex-col gap-10 w-full max-w-5xl mx-auto py-16 px-4">
+  <div class="flex flex-col gap-3">
+    <h2 class="text-4xl font-bold font-poppins tracking-tight">Paleta de Colores</h2>
+  </div>
+
+  <div class="flex flex-col gap-12">
+    <!-- Colores de Marca -->
+    <div class="flex flex-col gap-6">
+      <h3 class="text-xl font-poppins font-semibold border-b border-white/10 pb-2">Colores Principales</h3>
+      <div class="grid grid-cols-2 md:grid-cols-3 gap-6">
+        {brandColors.map((color) => (
+          <div class="flex flex-col gap-4 p-4 rounded-3xl bg-secondary/5 border border-white/10">
+            <div class={`w-full h-32 rounded-2xl ${color.class} shadow-lg border border-white/10`}></div>
+            <div class="flex justify-between items-center px-2">
+              <span class="font-poppins font-medium text-lg">{color.name}</span>
+              <span class="font-inter text-text-muted text-sm uppercase">{color.hex}</span>
+            </div>
+          </div>
+        ))}
+      </div>
+    </div>
+
+    <!-- Colores Base y Texto -->
+    <div class="flex flex-col gap-6">
+      <h3 class="text-xl font-poppins font-semibold border-b border-white/10 pb-2">Base y Texto</h3>
+      <div class="grid grid-cols-2 md:grid-cols-4 gap-4">
+        {baseColors.map((color) => (
+          <div class="flex flex-col gap-3">
+            <div class={`w-full aspect-video rounded-xl ${color.class} shadow-sm border border-white/10`}></div>
+            <div class="flex flex-col">
+              <span class="font-poppins font-medium text-sm">{color.name}</span>
+              <span class="font-inter text-text-muted text-xs uppercase">{color.hex}</span>
+            </div>
+          </div>
+        ))}
+      </div>
+    </div>
+
+    <!-- Estados / Feedback -->
+    <div class="flex flex-col gap-6">
+      <h3 class="text-xl font-poppins font-semibold border-b border-white/10 pb-2">Estados (Feedback)</h3>
+      <div class="grid grid-cols-2 md:grid-cols-4 gap-4">
+        {feedbackColors.map((color) => (
+          <div class="flex flex-col gap-3">
+            <div class={`w-full h-16 rounded-xl ${color.class} shadow-sm border border-white/10`}></div>
+            <div class="flex flex-col">
+              <span class="font-poppins font-medium text-sm">{color.name}</span>
+              <span class="font-inter text-text-muted text-xs uppercase">{color.hex}</span>
+            </div>
+          </div>
+        ))}
+      </div>
+    </div>
+  </div>
+</section>
