@@ -10,80 +10,70 @@
       <table class="w-full text-left border-collapse min-w-150">
         <thead>
           <tr class="border-b border-foreground/10 font-inter text-muted text-sm uppercase tracking-wider">
-            <th class="pb-4 font-normal w-1/4">Tipo</th>
-            <th class="pb-4 font-normal w-1/4">Default</th>
-            <th class="pb-4 font-normal w-1/4">Hover</th>
-            <th class="pb-4 font-normal w-1/4">Disabled</th>
+            <th class="pb-4 font-normal w-1/3">Default</th>
+            <th class="pb-4 font-normal w-1/3">Hover</th>
+            <th class="pb-4 font-normal w-1/3">Disabled</th>
           </tr>
         </thead>
         <tbody class="font-poppins">
-          <!-- Primary -->
+          <!-- Primario -->
           <tr class="border-b border-foreground/5">
-            <td class="py-8 font-semibold text-foreground">Primario</td>
-            <td class="py-8">
-              <button class="px-6 py-3 bg-primary text-white font-semibold rounded-full">Primario</button>
+            <td class="py-6">
+              <button class="px-6 py-3 bg-tertiary text-white font-semibold rounded-full">Primario</button>
             </td>
-            <td class="py-8">
-              <button class="px-6 py-3 bg-primary/80 text-white font-semibold rounded-full">Primario</button>
+            <td class="py-6">
+              <button class="px-6 py-3 bg-tertiary/80 text-white font-semibold rounded-full">Primario</button>
             </td>
-            <td class="py-8">
-              <button class="px-6 py-3 bg-primary/30 text-white/50 font-semibold rounded-full cursor-not-allowed">Primario</button>
+            <td class="py-6">
+              <button class="px-6 py-3 bg-tertiary/30 text-white/50 font-semibold rounded-full cursor-not-allowed">Primario</button>
             </td>
           </tr>
           
-          <!-- Secondary -->
+          <!-- Secundario (Contorno) -->
           <tr class="border-b border-foreground/5">
-            <td class="py-8 font-semibold text-foreground">Secundario</td>
-            <td class="py-8">
-              <button class="px-6 py-3 bg-secondary text-white font-semibold rounded-full">Secundario</button>
+            <td class="py-6">
+              <button class="px-6 py-3 bg-transparent border-2 border-tertiary text-tertiary font-semibold rounded-full">Secundario</button>
             </td>
-            <td class="py-8">
-              <button class="px-6 py-3 bg-secondary/80 text-white font-semibold rounded-full">Secundario</button>
+            <td class="py-6">
+              <button class="px-6 py-3 bg-tertiary/10 border-2 border-tertiary text-tertiary font-semibold rounded-full">Secundario</button>
             </td>
-            <td class="py-8">
-              <button class="px-6 py-3 bg-secondary/30 text-white/50 font-semibold rounded-full cursor-not-allowed">Secundario</button>
+            <td class="py-6">
+              <button class="px-6 py-3 bg-transparent border-2 border-tertiary/30 text-tertiary/30 font-semibold rounded-full cursor-not-allowed">Secundario</button>
             </td>
           </tr>
 
-          <!-- Accent -->
+          <!-- Guardar -->
           <tr class="border-b border-foreground/5">
-            <td class="py-8 font-semibold text-foreground">Acento</td>
-            <td class="py-8">
-              <button class="px-6 py-3 bg-accent text-white font-semibold rounded-full">Acento</button>
+            <td class="py-6">
+              <button class="px-6 py-3 bg-success text-white font-semibold rounded-full">Guardar</button>
             </td>
-            <td class="py-8">
-              <button class="px-6 py-3 bg-accent/80 text-white font-semibold rounded-full">Acento</button>
+            <td class="py-6">
+              <button class="px-6 py-3 bg-success/80 text-white font-semibold rounded-full">Guardar</button>
             </td>
-            <td class="py-8">
-              <button class="px-6 py-3 bg-accent/30 text-white/50 font-semibold rounded-full cursor-not-allowed">Acento</button>
-            </td>
-          </tr>
-          
-          <!-- Outline -->
-          <tr class="border-b border-foreground/5">
-            <td class="py-8 font-semibold text-foreground">Contorno</td>
-            <td class="py-8">
-              <button class="px-6 py-3 bg-transparent border-2 border-primary text-primary font-semibold rounded-full">Contorno</button>
-            </td>
-            <td class="py-8">
-              <button class="px-6 py-3 bg-primary/10 border-2 border-primary text-primary font-semibold rounded-full">Contorno</button>
-            </td>
-            <td class="py-8">
-              <button class="px-6 py-3 bg-transparent border-2 border-primary/30 text-primary/30 font-semibold rounded-full cursor-not-allowed">Contorno</button>
+            <td class="py-6">
+              <button class="px-6 py-3 bg-success/30 text-white/50 font-semibold rounded-full cursor-not-allowed">Guardar</button>
             </td>
           </tr>
 
-          <!-- Texto / Fantasma -->
+          <!-- Eliminar -->
           <tr>
-            <td class="py-8 font-semibold text-foreground">Texto</td>
-            <td class="py-8">
-              <button class="px-6 py-3 bg-transparent text-foreground font-semibold rounded-full">Fantasma</button>
+            <td class="py-6">
+              <button class="px-6 py-3 bg-error text-white font-semibold rounded-full flex items-center justify-center gap-2">
+                Eliminar
+                <svg xmlns="http://www.w3.org/2000/svg" class="w-5 h-5" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 6h18"/><path d="M19 6v14c0 1-1 2-2 2H7c-1 0-2-1-2-2V6"/><path d="M8 6V4c0-1 1-2 2-2h4c1 0 2 1 2 2v2"/></svg>
+              </button>
             </td>
-            <td class="py-8">
-              <button class="px-6 py-3 bg-foreground/10 text-foreground font-semibold rounded-full">Fantasma</button>
+            <td class="py-6">
+              <button class="px-6 py-3 bg-error/80 text-white font-semibold rounded-full flex items-center justify-center gap-2">
+                Eliminar
+                <svg xmlns="http://www.w3.org/2000/svg" class="w-5 h-5" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 6h18"/><path d="M19 6v14c0 1-1 2-2 2H7c-1 0-2-1-2-2V6"/><path d="M8 6V4c0-1 1-2 2-2h4c1 0 2 1 2 2v2"/></svg>
+              </button>
             </td>
-            <td class="py-8">
-              <button class="px-6 py-3 bg-transparent text-foreground/30 font-semibold rounded-full cursor-not-allowed">Fantasma</button>
+            <td class="py-6">
+              <button class="px-6 py-3 bg-error/30 text-white/50 font-semibold rounded-full cursor-not-allowed flex items-center justify-center gap-2">
+                Eliminar
+                <svg xmlns="http://www.w3.org/2000/svg" class="w-5 h-5" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 6h18"/><path d="M19 6v14c0 1-1 2-2 2H7c-1 0-2-1-2-2V6"/><path d="M8 6V4c0-1 1-2 2-2h4c1 0 2 1 2 2v2"/></svg>
+              </button>
             </td>
           </tr>
         </tbody>
